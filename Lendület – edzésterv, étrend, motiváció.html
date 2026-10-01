@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lendület – edzésterv, étrend és motiváció egy csomagban</title>
+<style>
+:root{--blue:#1b36e0;--blue2:#142bb8;--orange:#ff8a3d;--bg:#f6f7fb;--card:#fff;--ink:#14172b;--mute:#586079;--line:#dfe3f0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1020;--card:#181b32;--ink:#eef0fb;--mute:#a3a9c8;--line:#2a2e4d}}
+:root[data-theme="dark"]{--bg:#0e1020;--card:#181b32;--ink:#eef0fb;--mute:#a3a9c8;--line:#2a2e4d}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.55}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.05;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:900;margin-bottom:12px}
+section{padding:64px 0}
+.hero{background:var(--blue);color:#fff;padding:56px 0 64px}
+.brand{font-weight:900;font-size:1.2rem;margin-bottom:44px}
+.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);font-weight:900;max-width:11em}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p{font-size:1.15rem;max-width:34em;margin:20px 0 28px;opacity:.92}
+.btn{display:inline-block;background:var(--orange);color:#1a1205;font-weight:900;font-size:1.05rem;padding:16px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.note{font-size:.9rem;opacity:.85;margin-top:14px}
+.three{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:28px}
+.three div{border-top:4px solid var(--blue);padding-top:14px}
+.three h3{font-size:1.3rem;font-weight:900;margin-bottom:6px}
+.three p{margin:0;color:var(--mute)}
+.steps{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+ol{margin:24px 0 0;padding:0;list-style:none;display:grid;gap:18px;counter-reset:s}
+ol li{counter-increment:s;padding-left:58px;position:relative}
+ol li::before{content:counter(s);position:absolute;left:0;top:-2px;width:42px;height:42px;border-radius:50%;background:var(--blue);color:#fff;font-weight:900;display:grid;place-items:center}
+ol b{display:block;font-size:1.1rem}
+.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:28px;align-items:stretch}
+.plan{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}
+.plan.top{border-color:var(--blue);box-shadow:0 0 0 4px rgba(27,54,224,.14)}
+.tag{align-self:flex-start;background:var(--orange);color:#1a1205;font-weight:900;font-size:.8rem;padding:4px 12px;border-radius:999px;margin-bottom:10px}
+.plan h3{font-size:1.3rem;font-weight:900}
+.price{font-size:2.4rem;font-weight:900;margin:8px 0 0}
+.price small{font-size:1rem;font-weight:400;color:var(--mute)}
+.per{color:var(--mute);margin:0 0 14px;font-size:.92rem}
+.plan ul{padding-left:20px;margin:0 0 20px;flex:1}
+.plan .btn{text-align:center;background:var(--blue);color:#fff}
+.plan.top .btn{background:var(--orange);color:#1a1205}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{font-weight:900;cursor:pointer}
+details p{color:var(--mute);margin:8px 0 0}
+.cta{background:var(--blue2);color:#fff;text-align:center}
+.cta h2{max-width:14em;margin:0 auto 10px}
+form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+input{padding:15px 20px;border-radius:999px;border:0;font:inherit;min-width:min(300px,100%);color:#14172b}
+#ok{margin-top:16px;font-weight:900;color:var(--orange);min-height:1.5em}
+footer{padding:28px 0;color:var(--mute);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="w">
+<div class="brand">LENDÜLET</div>
+<h1>Ne találgass. <em>Kövesd a tervet.</em></h1>
+<p>Személyre szabott edzésterv, étrend és heti motiváció egyetlen csomagban – kezdőknek, akik végre tényleg el akarnak indulni, és ott is akarnak maradni.</p>
+<a class="btn" href="#arak">Csomag kiválasztása</a>
+<div class="note">Havi 14 990 Ft-tól · kezdő szinttől, edzőterem nélkül is</div>
+</div>
+</header>
+
+<section>
+<div class="w">
+<h2>Három dolog, ami eddig hiányzott.</h2>
+<div class="three">
+<div><h3>Edzésterv</h3><p>Heti 3 rövid edzés videós gyakorlatleírással, otthonra vagy terembe. Minden héten egy kicsit nehezebb, hogy fejlődj.</p></div>
+<div><h3>Étrend</h3><p>Egyszerű, olcsó alapanyagokból főzhető étkezések bevásárlólistával. Nincs éhezés, nincs kalóriaszámolás-kényszer.</p></div>
+<div><h3>Motiváció</h3><p>Heti üzenet, apró kihívások és közös check-in, hogy a harmadik hét után se fogyjon el a lendület.</p></div>
+</div>
+</div>
+</section>
+
+<section class="steps">
+<div class="w">
+<h2>Így indulsz el.</h2>
+<ol>
+<li><b>Kitöltöd a rövid kérdőívet</b>Célod, tapasztalatod, időd, ételérzékenységeid – 3 perc.</li>
+<li><b>Megkapod a tervedet</b>Edzésterv és étrend 48 órán belül, a hétköznapjaidhoz igazítva.</li>
+<li><b>Hetente visszajelzünk</b>Beírod, hogy ment, mi megmondjuk, min érdemes változtatni.</li>
+</ol>
+</div>
+</section>
+
+<section id="arak">
+<div class="w">
+<h2>Válaszd ki a tempódat.</h2>
+<p style="color:var(--mute);margin:0">Egy személyi edzői óra sokszor többe kerül, mint nálunk egy egész hónap.</p>
+<div class="plans">
+<div class="plan"><h3>Indító</h3><div class="price">14 990 Ft<small> / 1 hó</small></div><p class="per">Kipróbálnád? Ez a belépő.</p>
+<ul><li>Személyre szabott edzésterv</li><li>Heti étrend + bevásárlólista</li><li>Heti motivációs üzenet</li></ul><a class="btn" href="#kezdes">Ezt kérem</a></div>
+<div class="plan top"><span class="tag">Legtöbben ezt választják</span><h3>Átalakulás</h3><div class="price">34 990 Ft<small> / 3 hó</small></div><p class="per">Havi ~11 660 Ft · 9 980 Ft megtakarítás</p>
+<ul><li>Minden az Indítóból</li><li>Kéthetente frissülő terv</li><li>Havi mérés és célbeállítás</li><li>Közös kihívások</li></ul><a class="btn" href="#kezdes">Ezt kérem</a></div>
+<div class="plan"><h3>Szokássá válik</h3><div class="price">59 990 Ft<small> / 6 hó</small></div><p class="per">Havi ~9 998 Ft · 29 950 Ft megtakarítás</p>
+<ul><li>Minden az Átalakulásból</li><li>Szintlépés haladó tervre</li><li>Ünnepi és nyaralós extra terv</li></ul><a class="btn" href="#kezdes">Ezt kérem</a></div>
+</div>
+</div>
+</section>
+
+<section class="steps">
+<div class="w">
+<h2>Gyakori kérdések</h2>
+<details><summary>Kell hozzá edzőterem?</summary><p>Nem. Választhatsz otthoni, eszköz nélküli vagy termes tervet.</p></details>
+<details><summary>Mi van, ha még soha nem sportoltam?</summary><p>Pont neked készült. A terv alacsony szintről indul, és lépésenként halad.</p></details>
+<details><summary>Étrend allergiával vagy vegetáriánusként?</summary><p>A kérdőívben megadod, és a menüt ahhoz igazítjuk.</p></details>
+<details><summary>Lemondható?</summary><p>Igen, az első 14 napban pénzvisszatérítéssel, ha nem váltotta be, amit vártál.</p></details>
+</div>
+</section>
+
+<section class="cta" id="kezdes">
+<div class="w">
+<h2>Az első edzés ma kezdődhet.</h2>
+<p>Add meg az e-mail címed, és elküldjük a kérdőívet.</p>
+<form id="f"><input type="email" id="e" placeholder="E-mail címed" required aria-label="E-mail cím"><button class="btn" type="submit">Kérem a kérdőívet</button></form>
+<div id="ok" role="status"></div>
+</div>
+</section>
+<footer>© Lendület. Az edzés- és étrendterv nem helyettesíti az orvosi tanácsot.</footer>
+<script>
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();
+document.getElementById("ok").textContent="Köszönjük! Hamarosan jelentkezünk a kérdőívvel.";
+e.target.reset();
+});
+</script>
+</body>
+</html>
