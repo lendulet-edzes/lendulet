@@ -117,17 +117,13 @@ footer{padding:28px 0;color:var(--mute);font-size:.85rem;text-align:center}
 <div class="w">
 <h2>Az első edzés ma kezdődhet.</h2>
 <p>Add meg az e-mail címed, és elküldjük a kérdőívet.</p>
-<form id="f"><input type="email" id="e" placeholder="E-mail címed" required aria-label="E-mail cím"><button class="btn" type="submit">Kérem a kérdőívet</button></form>
+<form action="https://formsubmit.co/istvanbocskai10@gmail.com" method="POST">
+
+ <input type="email" id="e" placeholder="E-mail címed" required aria-label="E-mail cím"><button class="btn" type="submit">Kérem a kérdőívet</button></form>
 <div id="ok" role="status"></div>
 </div>
 </section>
 <footer>© Lendület. Az edzés- és étrendterv nem helyettesíti az orvosi tanácsot.</footer>
-<script>
-document.getElementById("f").addEventListener("submit",function(e){
-e.preventDefault();
-document.getElementById("ok").textContent="Köszönjük! Hamarosan jelentkezünk a kérdőívvel.";
-e.target.reset();
-});
-</script>
+
 </body>
 </html>
